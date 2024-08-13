@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slide {
+  from {
+    transform: translateX(105%);
+  }
+  to {
+    transform: translateX(-155%);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.btn {
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+}
+.btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  );
+}
+
+.gradient,
+.active {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  );
+}
+
+.active {
+  color: white;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+/* New Styles for Opacity and Hover Effects */
+.icons-slide > p {
+  opacity: 0.6;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icons-slide > p:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.icons-slide-paused {
+  animation-play-state: paused;
+}
+
+.icons-slide-running {
+  animation-play-state: running;
+}
+
+.icons-slide {
+  animation: slide 10s linear infinite;
+}
+
+@layer base {
+  body {
+    @apply text-lg leading-8 text-white;
+  }
+  .btn {
+    @apply font-montserrat uppercase font-black text-white;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold hover:from-[#FF56F6] hover:to-[#42A6E3];
+  }
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+
+}
