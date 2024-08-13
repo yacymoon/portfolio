@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.dd535489.css",
+    "main.js": "/portfolio/static/js/main.516d8924.js",
+    "static/media/about.png": "/portfolio/static/media/about.38f1981e87720012e5e5.png",
+    "static/media/site-bg.jpg": "/portfolio/static/media/site-bg.54724d703024833ef9c6.jpg",
+    "static/media/portfolio-img3.jpeg": "/portfolio/static/media/portfolio-img3.4bd37d66b29b89b638e3.jpeg",
+    "static/media/portfolio-img4.jpeg": "/portfolio/static/media/portfolio-img4.481c4a74c17e13fae9f0.jpeg",
+    "static/media/portfolio-img1.jpeg": "/portfolio/static/media/portfolio-img1.1dec27903dd42d993a30.jpeg",
+    "static/media/portfolio-img2.jpeg": "/portfolio/static/media/portfolio-img2.9ce2abf4bee8173b40cf.jpeg",
+    "static/media/rute_resume.pdf": "/portfolio/static/media/rute_resume.bc828919ae41bce1e7c5.pdf",
+    "static/media/logo.png": "/portfolio/static/media/logo.b45a93eaf83c39bef077.png",
+    "index.html": "/portfolio/index.html",
+    "main.dd535489.css.map": "/portfolio/static/css/main.dd535489.css.map",
+    "main.516d8924.js.map": "/portfolio/static/js/main.516d8924.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd535489.css",
+    "static/js/main.516d8924.js"
+  ]
+}
