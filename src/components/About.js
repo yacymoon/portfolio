@@ -10,6 +10,7 @@ import { useInView } from 'react-intersection-observer';
 
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import resume from '../assets/rute_resume.pdf'
 
 
 const About = () => {
@@ -50,7 +51,7 @@ const About = () => {
           mb-3 md:mb-3 mx-auto'></motion.div>
 
           {/* text */}
-          <div className='flex flex-col lg:w-[55%]'>
+          <div className='flex flex-col lg:w-[55%] lg:pt-[4%]'>
             <motion.div variants={fadeIn('left', 0.3)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.3}}
             className=''>
               <div className='text-center lg:text-left'>
@@ -61,6 +62,13 @@ const About = () => {
                     bridging the gap between server-side operations and user-facing experiences.
                 </h3>
               </div>
+            </motion.div>
+            <motion.div variants={fadeIn('left', 0.3)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.3}}
+            className='mx-auto lg:mx-0 pt-6'
+            >
+                <a href={resume} target="_blank">
+                  <button className='btn btn-lg border border-purple-900'>See Resume</button>
+                </a>
             </motion.div>
             <motion.div variants={fadeIn('left', 0.3)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.3}}
             className='icons whitespace-nowrap overflow-hidden py-10'>
